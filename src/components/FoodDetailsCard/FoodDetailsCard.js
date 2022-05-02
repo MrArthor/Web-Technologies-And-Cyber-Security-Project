@@ -21,7 +21,7 @@ const FoodDetailsCard = (props) => {
     <div className="container py-3 text-center">
       <Card style={{width:'50rem'}}>
         <Card.Body>
-          <Card.Img src={img} style={{ width: "150px" }}></Card.Img>
+          <Card.Img src={img} style={{ width: "150px" , height:"10px" }}></Card.Img>
           <Card.Title className="display-5 text-secondary">{title}</Card.Title>
           {/* <Card.Text>{subtitle}</Card.Text> */}
           <Card.Text className="lead">{description}</Card.Text>

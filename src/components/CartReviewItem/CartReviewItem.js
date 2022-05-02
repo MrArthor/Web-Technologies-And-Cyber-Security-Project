@@ -8,7 +8,7 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 const CartReviewItem = (props) => {
   const { title, quantity, keys, img } = props.foodsToReview;
   return (
-    <div className='container text-center'>
+    <div className='container text-center cart-review'>
       <div className='row'>
         <div className='col-md-4 crd'>
           <img src={img} alt='' />

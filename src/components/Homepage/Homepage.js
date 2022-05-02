@@ -8,9 +8,9 @@ import Food from '../Food/Food';
 const Homepage = () => {
     return (
         <div>
-            <Banner  ></Banner>
+            <Banner Content={" To Eat Is A Necessity, But To Eat Intelligently Is An Art. "}></Banner>
             <Food></Food>
-             <Banner Content={"Hello World"}></Banner> 
+             <Banner Content={"If you talk about food just as much as you eat it, you're in good company. We've got famous chefs and stars  "}></Banner> 
 
         </div>
     );

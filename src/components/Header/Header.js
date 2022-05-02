@@ -10,8 +10,9 @@ const Header = () => {
       <Navbar expand="lg" style={{ backgroundColor: "#fff" }}>
         <Navbar.Brand href="/">
           <img
-            src="https://i.ibb.co/qsXmy2v/logo2.png"
+            src="../Images/logo.jpg"
             width="120"
+            height="2"
             alt=""
             className="img-fluid"
             id="logo"
