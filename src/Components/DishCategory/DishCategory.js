@@ -2,10 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import "./DishCategory.css";
 import { Link } from "react-router-dom";
-/**
- * DishCategory imports data from 'Dish' component
- * and provides card design for 'Dish' component
- */
+
 const DishCategory = (props) => {
   const { keys,title, subtitle, img, catagories, price } = props.items;
   return (

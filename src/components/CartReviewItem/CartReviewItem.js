@@ -1,7 +1,6 @@
 /** @format */
 
 import React from "react";
-// import { Card ,Button} from "react-bootstrap";
 import "./CartReviewItem.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";

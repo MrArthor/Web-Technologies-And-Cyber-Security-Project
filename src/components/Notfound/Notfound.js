@@ -1,8 +1,6 @@
 import React from 'react';
 import { Alert, Card } from 'react-bootstrap';
-/**
- * Notfound works if any component not found or route param not found
- */
+
 const Notfound = () => {
     return (
         <div>

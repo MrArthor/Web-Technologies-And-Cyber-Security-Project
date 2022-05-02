@@ -9,11 +9,9 @@ const Login = () => {
        <div className="f-con">
             </div>
             <div className="f-con">
-                {/* <label for="username">Username</label> */}
                 <input type="email"  placeholder="Email"/>
             </div>
             <div className="f-con">
-                {/* <label for="username">Username</label> */}
                 <input type="password"  placeholder="Password"/>
             </div>
             <button class="form-button">Login</button>

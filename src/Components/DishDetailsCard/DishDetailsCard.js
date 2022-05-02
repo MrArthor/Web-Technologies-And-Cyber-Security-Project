@@ -3,11 +3,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import "react-toastify/dist/ReactToastify.css";
-/**
- * FooDetailsCard to show food details card
- * gets data from 'FoodDetails' component
- *
- */
+
 const DishDetailsCard = (props) => {
   const { keys, title, subtitle, description, img, catagories, price } = props.findDishDetails;
   return (
@@ -22,7 +18,6 @@ const DishDetailsCard = (props) => {
           <Button onClick={() => props.handleAddToCart(props.findDishDetails)} variant='outline-danger'>
             Add to cart
           </Button>
-          {/* add to cart btn needs a text field from where it can take food value/length */}
         </Card.Body>
       </Card>
     </div>

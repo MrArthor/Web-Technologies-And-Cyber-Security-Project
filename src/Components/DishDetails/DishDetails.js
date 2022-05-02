@@ -56,10 +56,7 @@ const handleAddToCart = (foodItem) => {
             findDishDetails={details}
           ></DishDetailsCard>
         ))
-        /**
-         * findDishDetails.map - to find all details of {findDish}
-         * sends data to 'DishDetailsCard' component
-         */
+        
       }
     </div>
    <div style={{display:'none'}}>

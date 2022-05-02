@@ -1,10 +1,7 @@
 import React from 'react';
 import HomeBanner from '../Banner/Banner';
 import Dish from '../Dish/Dish';
-/**
- * Homepage provides Home page design and things
- * these components only works in homepage
- */
+
 const Homepage = () => {
     return (
         <div>

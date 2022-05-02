@@ -16,11 +16,9 @@ const CartReview = () => {
     removeFromDatabaseCart(productKey);
   };
   useEffect(() => {
-    //useEffect here to load data from local storage
     const getSavedDataFromLS = getDatabaseCart();
     const itemKeys = Object.keys(getSavedDataFromLS);
-    //retrive ls data key and match with demoData key
-    //find all matches and get data
+    
     const cartProducts = itemKeys.map((key) => {
       const product = demoData.find((fd) => fd.keys === key);
       // console.log(product)
@@ -31,17 +29,7 @@ const CartReview = () => {
   }, []);
   return (
     <div className='container py-5'>
-      {/* <div className="float-left">
-      {cart.map((pd) => (
-        <CartReviewItem
-          removeItem={removeItem}
-          foodsToReview={pd}
-        ></CartReviewItem>
-      ))}
-     </div>
-     <div className="float-right">
-       <CartHidden cart={cart}></CartHidden>
-     </div> */}
+      
       <div className='row'>
         <div className='col-md-4'>
           <Form>
