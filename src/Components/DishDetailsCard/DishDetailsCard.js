@@ -14,7 +14,7 @@ const DishDetailsCard = (props) => {
           <Card.Title className='display-5 text-secondary'>{title}</Card.Title>
           <Card.Text className='lead'>{description}</Card.Text>
           <Card.Text>Type : {catagories}</Card.Text>
-          <Card.Text>Price : ${price}</Card.Text>
+          <Card.Text>Price : INR{price}</Card.Text>
           <Button onClick={() => props.handleAddToCart(props.findDishDetails)} variant='outline-danger'>
             Add to cart
           </Button>

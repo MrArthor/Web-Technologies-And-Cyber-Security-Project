@@ -19,8 +19,8 @@ const CartHidden = (props) => {
     <div className='container' style={{ display: "" }}>
       <div className='p-5'>
         <p>Item Ordered: {cart.length}</p>
-        <p>Total: ${grandTotal.toFixed(2)}</p>
-        <small>*Delivery charge ${delivery}</small>
+        <p>Total: INR{grandTotal.toFixed(2)}</p>
+        <small>*Delivery charge INR{delivery}</small>
       </div>
     </div>
   );

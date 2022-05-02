@@ -15,7 +15,7 @@ const DishCategory = (props) => {
           </Card.Title>
           <Card.Text>{subtitle}</Card.Text>
           <Card.Text>Type : {catagories}</Card.Text>
-          <Card.Text>${price}</Card.Text>
+          <Card.Text>INR{price}</Card.Text>
         </Card.Body>
       </Card>
     </div>
