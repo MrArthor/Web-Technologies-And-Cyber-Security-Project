@@ -1,14 +1,14 @@
 import React from "react";
-import Header from "./components/Header/Header";
-import Homepage from "./components/Homepage/Homepage";
+import Header from "./Components/Header/Header";
+import Homepage from "./Components/Homepage/Homepage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Notfound from "./components/Notfound/Notfound";
-import FoodDetails from "./components/FoodDetails/FoodDetails";
-import CartReview from "./components/CartReview/CartReview";
+import Notfound from "./Components/Notfound/Notfound";
+import DishDetails from "./Components/DishDetails/DishDetails";
+import CartReview from "./Components/CartReview/CartReview";
 //
 import { toast } from "react-toastify";
-import Login from "./components/Auth/Login/Login";
-import Register from "./components/Auth/Register/Register";
+import Login from "./Components/Auth/Login/Login";
+import Register from "./Components/Auth/Register/Register";
 
 toast.configure({
   autoClose: 1000,
@@ -22,7 +22,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path="/review/cart" component={CartReview} />
-          <Route exact path="/food/details/:keys" component={FoodDetails} />
+          <Route exact path="/food/details/:keys" component={DishDetails} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route path="*" component={Notfound} />

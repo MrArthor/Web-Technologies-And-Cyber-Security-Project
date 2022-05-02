@@ -1,13 +1,13 @@
 /** @format */
 
 import React, { useState } from "react";
-import "./Food.css";
+import "./Dish.css";
 import demoData from "../../demoData";
-import FoodCategory from "../FoodCategory/FoodCategory";
+import DishCategory from "../DishCategory/DishCategory";
 /**
- * Food component to find foods according to category
+ * Dish component to find foods according to category
  */
-const Food = () => {
+const Dish = () => {
   const data = demoData;
   const [foods] = useState(data);
   const [category, setCategory] = useState("lunch");
@@ -27,8 +27,8 @@ const Food = () => {
         <div className='row'>
           {selectCategory.map((item) => (
             <div className='col-md-4 py-3'>
-              {/* <FoodCategory/> food card design */}
-              <FoodCategory items={item} />
+              {/* <DishCategory/> food card design */}
+              <DishCategory items={item} />
             </div>
           ))}
         </div>
@@ -37,4 +37,4 @@ const Food = () => {
   );
 };
 
-export default Food;
+export default Dish;

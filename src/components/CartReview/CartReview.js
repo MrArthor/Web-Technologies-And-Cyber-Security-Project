@@ -47,7 +47,7 @@ const CartReview = () => {
           <Form>
             <Form.Group>
               <Form.Label>Address</Form.Label>
-              <Form.Control type='text' placeholder='107 Road No,Dhaka' />
+              <Form.Control type='text' placeholder='A-10 Sector-62 Noida, Uttar Pradesh' />
               <Form.Label>Phone</Form.Label>
               <Form.Control type='number' placeholder='088' />
               <Form.Label>Delivery Details</Form.Label>

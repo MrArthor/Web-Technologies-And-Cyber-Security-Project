@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./Banner.css";
-const Banner = (props) => {
+const HomeBanner = (props) => {
   const UIContent = props.Content;
   const UIFooter = props.Footer;
   return (
@@ -24,4 +24,4 @@ const Banner = (props) => {
   );
 };
 
-export default Banner;
+export default HomeBanner;

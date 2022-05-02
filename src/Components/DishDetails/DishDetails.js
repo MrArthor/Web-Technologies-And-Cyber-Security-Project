@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import demoData from "../../demoData";
-import FoodDetailsCard from "../FoodDetailsCard/FoodDetailsCard";
+import DishDetailsCard from "../DishDetailsCard/DishDetailsCard";
 import CartHidden from "../CartHidden/CartHidden";
 import { addToDatabaseCart, getDatabaseCart } from "../../utilities/databaseManager";
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const FoodDetails = () => {
+const DishDetails = () => {
   const { keys } = useParams();
-  const findFood = demoData.filter((find) => find.keys === keys);
-  const [findFoodDetails] = useState(findFood);
+  const findDish = demoData.filter((find) => find.keys === keys);
+  const [findDishDetails] = useState(findDish);
   const [cart,setCart] = useState([]);
  
   const notify = () => toast("Item added to cart!");
@@ -49,16 +49,16 @@ const handleAddToCart = (foodItem) => {
    <div className="py-5">
       <div className="food-details-container float-left">
       {
-        findFoodDetails.map((details) => (
-          <FoodDetailsCard
+        findDishDetails.map((details) => (
+          <DishDetailsCard
             key={details.keys}
             handleAddToCart={handleAddToCart}
-            findFoodDetails={details}
-          ></FoodDetailsCard>
+            findDishDetails={details}
+          ></DishDetailsCard>
         ))
         /**
-         * findFoodDetails.map - to find all details of {findFood}
-         * sends data to 'FoodDetailsCard' component
+         * findDishDetails.map - to find all details of {findDish}
+         * sends data to 'DishDetailsCard' component
          */
       }
     </div>
@@ -71,4 +71,4 @@ const handleAddToCart = (foodItem) => {
   );
 };
 
-export default FoodDetails;
+export default DishDetails;

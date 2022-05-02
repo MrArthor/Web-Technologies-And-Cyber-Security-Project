@@ -1,12 +1,12 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import "./FoodCategory.css";
+import "./DishCategory.css";
 import { Link } from "react-router-dom";
 /**
- * FoodCategory imports data from 'Food' component
- * and provides card design for 'Food' component
+ * DishCategory imports data from 'Dish' component
+ * and provides card design for 'Dish' component
  */
-const FoodCategory = (props) => {
+const DishCategory = (props) => {
   const { keys,title, subtitle, img, catagories, price } = props.items;
   return (
     <div className="food-cat-card">
@@ -25,4 +25,4 @@ const FoodCategory = (props) => {
   );
 };
 
-export default FoodCategory;
+export default DishCategory;
