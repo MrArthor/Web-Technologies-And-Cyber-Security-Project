@@ -110,8 +110,8 @@ const demoData = [
   {
     "title":'Waffles',
     "subtitle":'How we dream about our future',
-    "description":'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ab a hic soluta in accusantium aliquam tenetur inventore velit repellendus placeat, vel laudantium quos vitae recusandae nihil assumenda veritatis nisi.',
-    "img":'Images/Waffles.jpeg',
+    "description":'A waffle is a dish made from leavened batter or dough that is cooked between two plates that are patterned to give a characteristic size, shape, and surface impression. There are many variations based on the type of waffle iron and recipe used.     ',
+    "img":'./Images/Waffles.jpeg',
     "catagories":'breakfast',
     "price":350,
     "keys":"1001234854",
